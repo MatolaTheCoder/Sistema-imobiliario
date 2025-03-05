@@ -23,7 +23,7 @@ return new class extends Migration
             $table->string('descricao')->nullable();
             $table->string('quartos');
             $table->string('banheiros');
-            $table->string('mobiliado');
+            $table->boolean('mobiliado');
             $table->foreignId('estado_casa_id')->constrained();
             $table->string('descricao_mobilia')->nullable();
             $table->timestamps();
