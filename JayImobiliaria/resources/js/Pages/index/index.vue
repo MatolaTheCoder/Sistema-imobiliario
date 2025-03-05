@@ -1,14 +1,13 @@
 <template >
   <div>
     <MainLayout>
-      <h1 class="text-7xl bg-amber-300">Inicio {{ nome }}</h1>
+      <h1 class="text-2xl bg-amber-600">Inicio {{ nome }}</h1>
     </MainLayout>
   </div>
 </template>
 
 <script setup>
 import { defineProps } from 'vue';
-import '../../../css/app.css';
 import MainLayout from '../../Layouts/MainLayout.vue';
 defineProps({ nome: String });
 </script>
